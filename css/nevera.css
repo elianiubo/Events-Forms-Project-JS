@@ -1,0 +1,204 @@
+@import url('https://fonts.cdnfonts.com/css/nunito');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Reenie+Beanie&display=swap');
+
+body {
+    background-image: url('https://www.freevector.com/uploads/vector/preview/16497/FreeVector-Floral-Background-Pattern-1.jpg');
+    font-family: nunito;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+header {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: 1.5em;
+  font-weight: bold;
+  color:black;
+  background-color: rgba(255,255,255);
+  width:500px;
+  margin:0 auto;
+}
+
+header img{
+  width:50px;
+  margin-right:10px;
+}
+
+#nevera{
+  background-image:url('../img/nevera.png');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-position-y:0;
+  height:100%;
+  position:relative;
+}
+
+#nevera > div:first-child{
+  position:relative;
+  display:flex;
+  top:80px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+}
+
+#nevera > div:first-child > div:nth-child(2) {
+  display:block;
+  background-color: white;
+  width:550px;
+  height:550px;
+  border: black 4px solid;
+  border-radius: 10px;
+  margin-left: 30px;
+  -o-transform:rotate(-1deg);
+  -webkit-transform:rotate(-1deg);
+  -moz-transform:rotate(-1deg);
+  overflow:hidden;
+}
+
+#nevera > div:nth-child(2){
+  position:relative;
+  display:flex;
+  top:250px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+}
+
+#nevera > div:nth-child(2) ul {
+  display:block;
+  width:800px;
+  height:2000px;
+  font-family:'Reenie Beanie',serif;
+    font-size:20px;
+}
+
+/* Notes */
+#nevera > div:nth-child(2) ul,#nevera > div:nth-child(2) ul li{
+  list-style:none;
+  text-align: center;
+}
+
+#nevera > div:nth-child(2) ul{
+  overflow:hidden;
+  padding:0.5em;
+  margin-left:25px;
+}
+#nevera > div:nth-child(2) ul li a{
+  -o-transform:rotate(-1deg);
+  -webkit-transform:rotate(-1deg);
+  -moz-transform:rotate(-1deg);
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:8em;
+  width:8em;
+  padding:0.5em;
+  box-shadow: 0px 5px 7px rgba(33,33,33,.7);
+  transition: transform .15s linear;
+}
+#nevera > div:nth-child(2) ul li{
+  margin:0.5em;
+  float:left;
+}
+
+#nevera > div:nth-child(2) ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+#nevera > div:nth-child(2) ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+#nevera > div:nth-child(2) ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+  background:#f55;
+}
+
+#nevera > div:nth-child(2) ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+#nevera > div:first-child > div:nth-child(2) ul{
+    font-family: "Freehand", cursive;
+    font-size: 1.5em;
+    list-style:none;
+}
+
+.element{
+  display:inline-flex;
+  text-align: center;
+  border-bottom: 1px dashed darkgrey;
+}
+
+.element .numero{
+  width: 30px;
+}
+
+.element .text{
+  width: 400px;
+}
+
+.element .fa-trash-can{
+  width:30px;
+  color:red;
+  cursor:pointer;
+}
+
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    border:none !important;
+}
+
+.fa-square-plus {
+ font-size:25px;
+}
+
+form{
+  display:flex;
+  gap: 5px;
+}
+
+#quantitat-input{
+  width: 40px;
+}
+
+#iman{
+  position:relative;
+  width:200px;
+  top:400px;
+  left:900px;
+  z-index:1;
+}
+
+.completada{
+  text-decoration: line-through;
+  color:grey;
+}

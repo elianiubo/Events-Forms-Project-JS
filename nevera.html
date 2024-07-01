@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nevera</title>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <!-- Font Awesonme -->
+  <script src="https://kit.fontawesome.com/b614cfd257.js" crossorigin="anonymous"></script>
+  <!-- CSS de l'EAC -->
+  <link rel="stylesheet" type="text/css" href="css/nevera.css">
+
+  <!-- JS de l'EAC -->
+  <script type="text/javascript" src="js/nevera.js"></script>
+  
+</head>
+
+<body>
+  <header>
+    <img src="./img/marker.png">
+    <h1>Notes a la nevera</h1>
+  </header>
+
+  <div id="nevera">
+    <div>
+      <form>
+        <label for="item-input">Item</label>
+        <input type="text" id="item-input">
+        <label for="quantitat-input">Quantitat</label>
+        <input type="number" id="quantitat-input" value="1">
+        <button type="submit" id="submit-btn-1">
+          <i class="fa-solid fa-square-plus"></i>
+        </button>
+      </form>
+
+      <div>
+        <ul>
+          <!-- Recordatori -->
+          <li class="element">
+            <div class="numero">3</div>
+            <div class="text">Pa</div>
+            <div><i class="fa-solid fa-trash-can"></i></div>
+          </li>
+          <!-- Fi recordatori -->
+        </ul>
+      </div>
+    </div>
+    <div>
+      <form>
+        <button type="submit" id="submit-btn-2">
+          <i class="fa-solid fa-square-plus"></i>
+        </button>
+      </form>
+      <ul>
+        <!-- Post-it -->
+        <li>
+          <a href="#">
+            <p>Entregar aquest EAC abans del 09/04/24 a les 23:55</p>
+          </a>
+        </li>
+        <!-- Fi Post-it -->
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
